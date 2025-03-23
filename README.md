@@ -11,7 +11,6 @@ A **Rust-based test execution framework** that integrates with **Jenkins CI/CD**
 - **Generates structured JUnit XML reports** for Jenkins visualization  
 - **Runs tests inside Docker** for consistency across environments  
 - **Log processing module** captures warnings/errors from test logs  
-- **Data conversion tools** for structured test result handling  
 
 ##  Logs
 
