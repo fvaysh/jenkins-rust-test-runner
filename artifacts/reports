@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Rust Test Suite" tests="5" failures="1" errors="0" skipped="0" time="7.2">
+    <testcase classname="log_processor" name="test_filter_errors" time="0.5"/>
+    <testcase classname="log_processor" name="test_count_warnings" time="0.3"/>
+    <testcase classname="parallel_runner" name="test_parallel_execution" time="2.1">
+        <system-out>WARNING: Parallel task 2 took longer than expected.</system-out>
+    </testcase>
+    <testcase classname="data_converter" name="test_json_to_csv" time="0.8">
+        <failure message="Mismatch in expected CSV format." type="AssertionError">
+            Expected: valid CSV format
+            Actual: Column misalignment in row 2
+        </failure>
+    </testcase>
+    <testcase classname="data_converter" name="test_csv_to_json" time="0.6"/>
+</testsuite>
